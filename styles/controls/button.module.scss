@@ -1,0 +1,29 @@
+.button {
+  font-size: 1rem;
+  min-width: 8rem;
+  margin-right: 0.5rem;
+  padding: 0.7rem 0.6rem;
+  background-image: linear-gradient(
+    to right,
+    #02aab0 0%,
+    #00cdac 51%,
+    #02aab0 100%
+  );
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
+  border: none;
+  border-radius: 6px;
+  display: block;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-position: right center; /* change the direction of the change here */
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-decoration: none;
+}

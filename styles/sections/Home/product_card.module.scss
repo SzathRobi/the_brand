@@ -1,0 +1,33 @@
+@import "../../variables.module.scss";
+
+.product_card {
+  padding: 1rem;
+  margin: 1rem;
+  background-color: $yellow-secondary;
+  border-radius: 0.3rem;
+  width: 300px;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4),
+    -2px -2px 6px rgba(255, 255, 255, 0.4);
+
+  h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+
+  .cta_container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 1.5rem;
+
+    .secondary_cta {
+      background: #fff;
+      color: $blue-main;
+    }
+  }
+}

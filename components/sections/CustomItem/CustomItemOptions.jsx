@@ -1,4 +1,5 @@
 import React from "react";
+import Button from "../../controls/Button";
 import styles from "../../../styles/sections/CustomItem/custom_item_options.module.scss";
 
 function CustomItemOptions() {
@@ -24,6 +25,35 @@ function CustomItemOptions() {
             </button>
           </div>
         </article>
+        <article className={styles.option_container}>
+          <h3>Szín</h3>
+          <div className={styles.btn_container}>
+            <label className={styles.color_box}>
+              <input type="checkbox" />
+            </label>
+            <label className={styles.color_box}>
+              <input type="checkbox" />
+            </label>
+            <label className={styles.color_box}>
+              <input type="checkbox" />
+            </label>
+            <label className={styles.color_box}>
+              <input type="checkbox" />
+            </label>
+          </div>
+        </article>
+        <article className={styles.option_container}>
+          <h3>Leírás</h3>
+          <textarea cols="34" rows="8"></textarea>
+        </article>
+        <article className={styles.option_container}>
+          <h3>Leírás</h3>
+          <div className={styles.img_upload_surface}>
+            <span>+</span>
+          </div>
+        </article>
+
+        <Button>KÜLDÉS</Button>
       </form>
     </section>
   );

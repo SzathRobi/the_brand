@@ -42,6 +42,42 @@
             transform: translateY(-50%);
           }
         }
+
+        .color_box {
+          width: 3rem;
+          height: 3rem;
+          background-color: rosybrown;
+          margin-right: 0.8rem;
+
+          &:nth-child(2) {
+            background-color: burlywood;
+          }
+
+          &:nth-child(3) {
+            background-color: chocolate;
+          }
+
+          &:nth-child(4) {
+            background-color: tomato;
+          }
+          input[type="checkbox"] {
+            opacity: 0;
+          }
+        }
+      }
+
+      .img_upload_surface {
+        width: 300px;
+        height: 250px;
+        background-color: $clay-secodary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        span {
+          font-size: 3rem;
+          font-weight: 600;
+        }
       }
     }
   }

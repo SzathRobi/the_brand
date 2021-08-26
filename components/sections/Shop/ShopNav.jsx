@@ -18,7 +18,6 @@ function ShopNav() {
             <option value="all">CSÖKKENŐ ÁR</option>
             <option value="all">NÖVEKVŐ ÁR</option>
             <option value="all">A-Z</option>
-            <option value="all">A-Z</option>
             <option value="all">Z-A</option>
           </select>
           {/* <select>

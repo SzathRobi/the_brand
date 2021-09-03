@@ -16,11 +16,15 @@ h2 {
   text-align: center;
 }
 
+button {
+  cursor: pointer;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
-  color: #fff;
+  /*color: #fff;*/
 }

@@ -27,10 +27,10 @@ function Landing() {
       />
       <div className={styles.backdrop} />
       <article className={styles.intro}>
-        <h1>Egyedi kézműves agyagtárgyak széles választékban</h1>
+        <h1>Szuper Duper Besza Behu Hobo Loco Promo Bro Szöveg</h1>
         <div className={styles.cta_container}>
           <Button className={styles.secondary_cta}>EGYEDI TERMÉK</Button>
-          <Button>IRÁNY A BOLT</Button>
+          <Button>TERMÉKEK</Button>
         </div>
       </article>
       <div className={styles.wave_container}>

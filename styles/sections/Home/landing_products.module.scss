@@ -1,0 +1,82 @@
+@import "../../variables.module.scss";
+
+.landing_products {
+  padding: 1.5rem;
+  background-color: $clay-main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #fff;
+
+  h2 {
+    margin-bottom: 2rem;
+  }
+
+  article {
+    margin: 1rem 0;
+    background-color: $clay-secondary;
+    position: relative;
+    border-radius: 0.3rem;
+
+    .img_container {
+      position: relative;
+      left: 1px;
+      height: 10rem;
+      width: calc(100% - 2px);
+      border-radius: 0.3rem;
+    }
+
+    .product_info {
+      box-shadow: inset 4px 4px 8px rgba(0, 0, 0, 0.4),
+        inset -3px -3px 5px rgba(255, 255, 255, 0.4);
+      padding: 1rem;
+    }
+
+    p {
+      margin: 0.3rem 0;
+    }
+
+    button {
+      @include btn;
+      margin: 1rem 0;
+    }
+  }
+}
+
+@media (min-width: 40em) {
+  .landing_products {
+    article {
+      width: 70%;
+      margin: 3rem auto;
+      display: flex;
+      flex-direction: row;
+
+      &:nth-of-type(even) {
+        flex-direction: row-reverse;
+      }
+
+      .img_container {
+        height: auto;
+        box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4),
+          -2 -2 4px rgba(255, 255, 255, 0.4);
+
+        img {
+          border-radius: 0.3rem;
+        }
+      }
+
+      .product_info {
+        padding: 1.5rem 3rem;
+
+        p {
+          width: 50ch;
+        }
+
+        button {
+          transform: translateY(0.5rem);
+        }
+      }
+    }
+  }
+}

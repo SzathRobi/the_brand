@@ -27,7 +27,7 @@
       backdrop-filter: blur(6px);
       box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4),
         -2px -2px 3px rgba(255, 255, 255, 0.4);
-
+      color: #fff;
       h1 {
         font-size: 2rem;
       }
@@ -36,7 +36,8 @@
 
   .intro {
     width: 300px;
-    background-color: $clay-secodary;
+    color: #fff;
+    background-color: $clay-secondary;
     padding: 2rem;
     margin: 1rem auto 0;
     border-radius: 0.3rem;
@@ -50,7 +51,24 @@
 
     p {
       font-size: 1.1rem;
-      line-height: 1.4rem;
+      line-height: 1.7rem;
+    }
+  }
+}
+
+@media (min-width: 40em) {
+  .custom_item_landing {
+    .img_container {
+      .title {
+        width: 30rem;
+        text-align: center;
+      }
+    }
+    .intro {
+      padding: 4rem 2.5rem;
+      position: absolute;
+      top: calc(45vh + 1rem);
+      right: 15rem;
     }
   }
 }

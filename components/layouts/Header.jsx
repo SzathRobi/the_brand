@@ -25,11 +25,6 @@ function Header() {
             </Link>
           </li>
           <li>
-            <Link href="/bolt">
-              <a>BOLT</a>
-            </Link>
-          </li>
-          <li>
             <Link href="/egyedi_termek">
               <a>EGYEDI TERMÉK</a>
             </Link>
@@ -44,6 +39,25 @@ function Header() {
               <a>BEJELENTKEZÉS</a>
             </Link>
           </li>*/}
+        </ul>
+      </nav>
+      <nav className={styles.desktop_nav}>
+        <ul>
+          <li>
+            <Link href="/">
+              <a>Főoldal</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/kosar">
+              <a>KOSÁR</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/egyedi_termek">
+              <a>Egyedi Termék</a>
+            </Link>
+          </li>
         </ul>
       </nav>
     </header>

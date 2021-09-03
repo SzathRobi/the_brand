@@ -20,7 +20,7 @@
     position: absolute;
     top: 30vh;
     left: 5vw;
-    z-index: 10;
+    z-index: 9;
     color: #fff;
     font-size: 1.3rem;
 
@@ -43,6 +43,15 @@
   .wave_container {
     position: absolute;
     bottom: -0.5rem;
-    z-index: 10;
+    z-index: 9;
+  }
+}
+
+@media (min-width: 40em) {
+  .landing .intro {
+    left: 10vw;
+    h1 {
+      width: 30ch;
+    }
   }
 }

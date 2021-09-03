@@ -4,6 +4,7 @@
   padding: 1rem 2rem;
   form {
     margin: 1rem 0;
+    color: #fff;
     .option_container {
       margin: 1rem 0;
 
@@ -13,15 +14,16 @@
 
       .btn_container {
         display: flex;
+        gap: 1rem;
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
         button {
-          border: 1px solid $clay-secodary;
-          color: $clay-secodary;
+          transition: 300ms;
+          border: 1px solid $clay-secondary;
+          color: $clay-secondary;
           background-color: #fff;
           padding: 0.5rem 1rem;
-          margin-right: 0.3rem;
           margin-bottom: 0.3rem;
           box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4),
             -2px -2px 3px rgba(255, 255, 255, 0.4);
@@ -48,6 +50,8 @@
           height: 3rem;
           background-color: rosybrown;
           margin-right: 0.8rem;
+          border-radius: 0.3rem;
+          transition: 100ms;
 
           &:nth-child(2) {
             background-color: burlywood;
@@ -69,7 +73,7 @@
       .img_upload_surface {
         width: 300px;
         height: 250px;
-        background-color: $clay-secodary;
+        background-color: $clay-secondary;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -79,6 +83,14 @@
           font-weight: 600;
         }
       }
+    }
+  }
+}
+
+@media (min-width: 40em) {
+  .custom_item_options {
+    form {
+      transform: translate(20rem, -8rem);
     }
   }
 }
